@@ -595,7 +595,8 @@ display: block;}
 }
 
 .text-div{
-  padding-top: 20px;
+  padding: 20px 24px;
+
   border-left: 1px solid var(--border-portfolio-cards);
   border-right: 1px solid var(--border-portfolio-cards);
   border-bottom: 1px solid var(--border-portfolio-cards);}
@@ -622,8 +623,6 @@ display: block;}
 }
 
 .title-portfolio {
-  padding-left: 24px;
-  padding-right: 24px;
   padding-bottom: 4px;
 
   font-size: 18px;
@@ -632,10 +631,6 @@ display: block;}
 }
 
 .text-portfolio {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
