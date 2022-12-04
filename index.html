@@ -31,7 +31,11 @@
           >
           <ul class="nav-up list">
             <li class="item">
-              <a href="./index.html" class="nav-stydio link current">Студія</a>
+              <div class="item-current">
+                <a href="./index.html" class="nav-stydio link current"
+                  >Студія</a
+                >
+              </div>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="nav-portfolio link"
@@ -42,7 +46,7 @@
               <a href="" class="nav-contact link">Контакти</a>
             </li>
           </ul>
-        </nav> 
+        </nav>
         <!--Contact-->
         <ul class="nav-contact list">
           <li class="nav-icon">
@@ -68,12 +72,14 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button-studio">Замовити послугу</button>
+          <button data-modal-open type="button" class="button-studio">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section">
         <div class="container">
-          <!-- <h2">Наші переваги</h2> -->
+          <h2 class="title-hidden">Наші переваги</h2>
           <ul class="list list-section">
             <li class="item">
               <div class="item-icon">
@@ -130,29 +136,38 @@
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="list list-img">
-            <li class="item item-img">
-              <img
-                class="pic"
-                src="./images/box1-2-2.jpg"
-                alt="Друк на клавіатурі"
-                width="370"
-              />
+            <li>
+              <div class="item-relative">
+                <img
+                  class="pic"
+                  src="./images/box1-2-2.jpg"
+                  alt="Друк на клавіатурі"
+                  width="370"
+                />
+                <p>Десктопні додатки</p>
+              </div>
             </li>
-            <li class="item">
-              <img
-                class="pic"
-                src="./images/box2-2-2.jpg"
-                alt="Вибір макета на ноуті"
-                width="370"
-              />
+            <li>
+              <div class="item-relative">
+                <img
+                  class="pic"
+                  src="./images/box2-2-2.jpg"
+                  alt="Вибір макета на ноуті"
+                  width="370"
+                />
+                <p>Мобільні додатки</p>
+              </div>
             </li>
-            <li class="item">
-              <img
-                class="pic"
-                src="./images/box3-2-2.jpg"
-                alt="Кольорова палітра"
-                width="370"
-              />
+            <li>
+              <div class="item-relative">
+                <img
+                  class="pic"
+                  src="./images/box3-2-2.jpg"
+                  alt="Кольорова палітра"
+                  width="370"
+                />
+                <p>Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -201,7 +216,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="items">
               <img
                 class="items-picture"
@@ -429,5 +443,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="backdrop-modal">
+        <button data-modal-close class="backdrop-button" type="button">
+          <svg class="backdrop-svg">
+            <use href="./images/icons.svg#icon-closeX"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
