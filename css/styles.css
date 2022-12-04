@@ -596,8 +596,9 @@ display: block;}
 
 .text-div{
   padding-top: 20px;
-  
-  border: 1px solid var(--border-portfolio-cards);}
+  border-left: 1px solid var(--border-portfolio-cards);
+  border-right: 1px solid var(--border-portfolio-cards);
+  border-bottom: 1px solid var(--border-portfolio-cards);}
 
 .container-portfolio .picture:hover,
 .container-portfolio .picture:focus {
