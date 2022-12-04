@@ -295,6 +295,8 @@ p {
 }
 
 .items-picture {
+  display: block;
+
   margin-bottom: 30px;
 }
 /* Subject Наші переваги */
@@ -544,7 +546,6 @@ p {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--border-portfolio-cards);
 
   transition: box-shadow 250ms var(--transition-timing-function-all-hover-focus);
 }
@@ -557,10 +558,11 @@ p {
 }
 
 /* Позиціонування портфоліо */
+.picture-pic{
+display: block;}
+
 .picture-thumb {
   position: relative;
-
-  margin-bottom: 20px;
 
   overflow: hidden;
 }
@@ -591,6 +593,11 @@ p {
   color: var(--header-bg-color);
   background-color: var(--background-color-portfolio-picture);
 }
+
+.text-div{
+  padding-top: 20px;
+  
+  border: 1px solid var(--border-portfolio-cards);}
 
 .container-portfolio .picture:hover,
 .container-portfolio .picture:focus {
