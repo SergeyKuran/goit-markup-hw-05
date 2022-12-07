@@ -441,6 +441,17 @@
             </li>
           </ul>
         </div>
+        <form class="form">
+          <div>
+            <label class="form-label" for="email">Підписатися на розсилку</label>
+            <input class="form-email" type="email" name="email" id="email" placeholder="E-mail">
+          </div>
+          <button class="form-button" type="submit" >Підписатися
+            <svg class="form-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -450,6 +461,40 @@
             <use href="./images/icons.svg#icon-closeX"></use>
           </svg>
         </button>
+        <form class="form-modal">
+        <b>Залиште свої дані, ми вам передзвонимо</b>
+          <div role="group" class="form-group">
+            <label for="name">Ім'я</label>
+            <input class="form-group-input-name" type="name" name="name" id="name">
+            <svg class="form-svg" width="12" height="12">
+              <use href="./images/icons.svg#icon-name" width="12" height="12"></use>
+            </svg>
+            
+            <label for="tel">Телефон</label>
+            <input class="form-group-input-name" type="tel" name="tel" id="tel">
+            <svg class="form-svg" width="13" height="13">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+
+            <label for="email">Пошта</label>
+            <input type="email" name="email" id="email">
+            <svg class="form-svg" width="15" height="12">
+              <use href="./images/icons.svg#icon-email" width="12" height="12"></use>
+            </svg>
+
+            <label for="comment">Коментар</label>
+            <texarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></texarea>
+          </div>
+        <input type="checkbox" name="policy" id="policy">
+        <svg class="form-svg" width="16" height="15">
+          <use href="./images/icons.svg#icon-check"></use>
+        </svg>
+        <label for="policy" name="policy">Погоджуюся з розсилкою та приймаю
+          <a href="#">Умови договору</a>
+        </label>
+
+        <button type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
